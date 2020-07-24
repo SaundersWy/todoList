@@ -1,11 +1,19 @@
 // Cross of item clicked
 $('ul').on('click', 'li', function () {
-    $(this).toggleClass('complete');
+    let currentLI = $(this);
+    setTimeout(function() {
+        if(currentLI.hasClass('complete')) {
+                currentLI.fadeOut(400, function () {
+                    currentLI.remove();
+                });
+        } else {clearTimeout();}
+    }, 10000);
+    currentLI.toggleClass('complete');
 })
 
 // Delete list item when span/trash-icon is clicked
 $('ul').on('click', 'span', function (event) {
-    $(this).parent().fadeOut(300, function () {
+    $(this).parent().fadeOut(400, function () {
         $(this).remove();
     });
     event.stopPropagation();
@@ -18,6 +26,7 @@ $('#input-container').on('keypress', 'input', function (event) {
     }
 });
 
+let rotate = 90;
 $('.fa-plus').click(function () {
     if ($('input').val()) {
 
@@ -32,8 +41,5 @@ $('.fa-plus').click(function () {
     }
 });
 
-let rotate = 90;
-$('.fa-plus').click(function() {
-    
-});
+
 
