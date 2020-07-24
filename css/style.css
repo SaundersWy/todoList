@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nanum Brush Script', cursive;
+    font-family: 'Oregano', cursive;
 }
 
 body {
@@ -70,7 +70,7 @@ li:hover span {
 .fa-plus {
     float: right;
     line-height: 40px;
-    transition: color 0.3s, transform 0.3s;
+    transition: color 0.3s, transform 0.2s;
 }
 
 .fa-plus:hover {
@@ -82,9 +82,8 @@ li:hover span {
     margin: 50px auto;
     width: 400px;
     box-shadow: 0 0 5px rgba(0,0,0, 0.4);
-    /* border: 1px solid transparent; */
     height: 600px;
-    overflow-y: hidden;
+    overflow-y: auto;
     background: #f0e582;
 }
 
