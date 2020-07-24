@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nanum Brush Script', cursive;
+}
+
+body {
+    background: linear-gradient(to right, #4a6886, #3498db);
+}
+
+h1 {
+    background: #ff4719;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: 300;
+}
+
+input {
+    height: 40px;
+    width: 100%;
+    background: #eee9e9;
+    outline: none;
+    border: none;
+    padding: 0 5px;
+    font-size: 16pt;
+
+
+}
+
+ul {
+    list-style: none;
+}
+
+span {
+    width: 0;
+    margin: 0 4px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    text-align: center;
+    background: #e91010;
+    color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+span:hover {
+    background-color: #a80d0d;
+}
+
+li {
+    height: 40px;
+    line-height: 37px;
+    border-bottom: 3px solid #6fa9df;
+    background: white;
+}
+
+li:hover span {
+    width: 30px;
+    opacity: 1;
+}
+
+.complete {
+    color: gray;
+    text-decoration: line-through;
+}
+
+.fa-plus {
+    float: right;
+    line-height: 40px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.fa-plus:hover {
+    color: white;
+}
+
+
+#main-container {
+    margin: 50px auto;
+    width: 400px;
+    box-shadow: 0 0 5px rgba(0,0,0, 0.4);
+    /* border: 1px solid transparent; */
+    height: 600px;
+    overflow-y: hidden;
+    background: #f0e582;
+}
+
+#input-container {
+    height: 40px;
+}
+
+#list-container {
+    margin-top: 0px;
+}
